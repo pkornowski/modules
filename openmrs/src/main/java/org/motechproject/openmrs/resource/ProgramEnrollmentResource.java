@@ -48,4 +48,8 @@ public interface ProgramEnrollmentResource {
      * @param uuid the UUID of the program enrollment
      */
     void deleteProgramEnrollment(Config config, String uuid);
+
+    ProgramEnrollment updateBahmniProgramEnrollment(Config config, ProgramEnrollment programEnrollment);
+
+    List<ProgramEnrollment> getBahmniProgramEnrollmentByPatientUuid(Config config, String patientUuid);
 }

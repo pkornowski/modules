@@ -114,6 +114,11 @@ public class ProgramEnrollmentResourceImplTest extends AbstractResourceImplTest 
         assertThat(JsonUtils.readJson(requestCaptor.getValue().getBody(), JsonObject.class), nullValue());
     }
 
+    @Test
+    public void shouldUpdateBahmniProgramEnrollment() {
+        
+    }
+
     private ProgramEnrollment prepareProgramEnrollment() throws Exception {
         return (ProgramEnrollment) readFromFile(PROGRAM_ENROLLMENT_RESPONSE, ProgramEnrollment.class);
     }
